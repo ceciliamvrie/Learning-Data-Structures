@@ -1,4 +1,5 @@
-Stacks and Queques: 
+# Stacks and Queques
+
 Stacks are almost like the pile of plates you see at a cafeteria, hence why they are named "stacks".
 One might ask, "How does a data structure exactly behave just like a pile of plates?", well let's get into 
 it and find out!
