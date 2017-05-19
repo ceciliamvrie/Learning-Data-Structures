@@ -1,5 +1,6 @@
 # Stacks and Queques
 
+### Introduction
 Stacks are almost like the pile of plates you see at a cafeteria, hence why they are named "stacks".
 One might ask, "How does a data structure exactly behave just like a pile of plates?", well let's get into 
 it and find out!
@@ -7,11 +8,12 @@ it and find out!
 Stacks are ment to retain their order inside them, keeping the most recent additions at the top and the 
 oldest at the bottom. 
 
+### Making Methods
 The stack has two operations: 
-	- push(data); which adds its data
-	- pop(); removes the most recently added data 
+- **push(data)** which adds its data
+- **pop()** which removes the most recently added data 
 
-For writing our first stack, we shall create a constructor named `Stack`. Each instance of Stack will have two 
+For writing our *first* stack, we shall create a constructor named `Stack`. Each instance of Stack will have two 
 properties: size and storage. 
 
 	function Stack() {
@@ -19,7 +21,7 @@ properties: size and storage.
 		this._storage = {}; // storage is an object that will hold the data into properties 
 	}
 
-The next step is to make methods for pushing and poping the stored data either into or outof the stack. We shall put
+The next step is to make methods for pushing and poping the stored data either into or out of the stack. We shall put
 this into the prototype since all instances of stack should have these same properties. 
 
 	Stack.prototype.push = function(data) {
@@ -44,7 +46,7 @@ this into the prototype since all instances of stack should have these same prop
 
         	return deletedData;
 	}
-
+### Any Revisions?
 Okay so let's consider a scenario where we first pop() and then push(data), wouldn't the size be equal to 0? Well shouldn't 
 it be equal to 1?!
 So lets impliment an if statement inside there to change that!
@@ -58,7 +60,5 @@ So lets impliment an if statement inside there to change that!
         		size--;
         	
         		return deletedData;
-                }
+        }
 	}
-
-
