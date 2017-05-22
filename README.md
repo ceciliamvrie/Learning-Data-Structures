@@ -1,4 +1,4 @@
-# Stacks and Queques
+# Stacks and Queues
 
 ### Introduction
 Stacks are almost like the pile of plates you see at a cafeteria, hence why they are named "stacks".
