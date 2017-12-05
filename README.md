@@ -62,3 +62,34 @@ So lets impliment an if statement inside there to change that!
         		return deletedData;
         }
 	}
+## What is a Queue?
+You can think of a queue as a line of people -the last ones in are the last ones out. Unlike a stack, a queue is constantly putting things in on one end and spitting things out on the other. To ingest something, you **enqueue** it; to spit something  out, you **dequeue** it.
+
+So let's consider building our first queue: 
+    Since we know that a queue is the same thing as a line, we need to start figuring out a way to enqueue things at the 'end' of the queue.
+    
+    `// First we consider how the queue will store its things	
+       function Queue() {
+         this.storage = [];
+	 this.head = 0;
+	 this.tail = 0;
+       }
+       
+       Queue.prototype.enqueue = function(data) {
+         var tail = this.tail;
+         this.storage[tail++] = data; // the data will get enqueued at the end of the line
+       }
+       
+       Queue.prototype.dequeue = function() {
+         if (this.tail <= this.head) {
+           return 
+         }
+	 var dequeued = this.storage[this.head]
+	 this.storage.shift()
+	 this.head++
+	 
+	 return dequeued
+       }
+    `
+    
+    
